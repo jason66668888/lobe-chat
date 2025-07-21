@@ -1,10 +1,11 @@
 [build]
-command = "rm -rf .next node_modules/.cache && pnpm run build"
+command = "rm -rf .next node_modules/.cache && pnpm i && npm run build"
 publish = ".next"
 
 [build.environment]
 NODE_OPTIONS = "--max-old-space-size=4096"
 
 [template.environment]
-OPENAI_API_KEY = "set your OpenAI API Key"
-ACCESS_CODE = "set your password to protect your api key"
+OPENAI_API_KEY = "sk-c61E10jppPf1dkZjT0hp9nQ847gHwpnpBoOzvRYxOQFIhNkN"
+ACCESS_CODE = "Wang1234"
+OPENAI_PROXY_URL = "https://code.wenwen-ai.com/v1"
